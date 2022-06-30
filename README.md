@@ -1,8 +1,12 @@
-# python-pkg
+# JKD Tree
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-TODO: Update title, add basic description.
+[Jax](https://github.com/google/jax) port of [scikit-learn kdtrees](https://github.com/scikit-learn/scikit-learn/tree/master/sklearn/neighbors).
+
+## Project Status
+
+Preliminary work on heaps (required for some KDTree operations) shows jax jitting performs poorly for algorithms involving many loops compared to numba, so this work is being paused until performance improves. See [numba-neighbors](https://github.com/jackd/numba-neighbors) for a numba implementation.
 
 ## Pre-commit
 
